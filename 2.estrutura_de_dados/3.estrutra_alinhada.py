@@ -15,3 +15,7 @@ elif idade < 18:
      print("SOMENTE COM A PERMISSÃO DOS PAIS!")
 else:
      print("ACESSO LIBERADO")
+    
+
+
+

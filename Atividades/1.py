@@ -7,6 +7,7 @@ os.system ("clear") # Limpar o terminal
 
 valor = int(input ("Digite o número: "))
 
+
 if  valor <10:
     print("NÃO É MAIOR QUE DEZ")
 else: 
