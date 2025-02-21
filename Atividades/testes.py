@@ -1,15 +1,22 @@
 import os 
 os.system("clear")
 
-primeira_nota = float(input ("1ª nota: "))
-segunda_nota = float(input ("2ª nota: "))
+nome_do_estagiario = str(input("Nome do Estagiário: "))
+quantidade_de_faltas = int(input("Quantidade de faltas: ")) 
+comportamento_do_funcionario =str(input("Comportamento dentro da empresa: "))
 
-soma = primeira_nota + segunda_nota
-media = soma  /3
-print("Média: ")
-if  media < 5:
-    print("REPROVADO")
-elif media == 4:
-    print("RECUPERAÇÃO")
+print("\nAVALIAÇÃO DOS ESTAGIÁRIOS: ")
+
+
+
+if   quantidade_de_faltas <10:
+     print("Funcionário de alta contrinuição para a empresa")    
+else: 
+     print("Funcionário de baixa contribuição para a empresa")
+
+if   comportamento_do_funcionario == "ruim":     
+     print("Funcionário mal comportado")    
+elif comportamento_do_funcionario == "bom":
+     print("Funcionário bem portado")
 else:
-    print("APROVADO")
+     print("Funcionario esforçado")
