@@ -1,7 +1,7 @@
 import os 
 os.system("clear")
 
-#Match    Case substitui if-else-elif
+#Match Case substitui if-else-elif
 
 dia = input ("Digite sua idade")
 
