@@ -1,33 +1,37 @@
 import os
-from unittest import case
 os.system("clear")
 
-quantidade_de_parcelas = int(input("Quantidade de Parcelas: "))
-total_a_pagar = float
+#Entrada
 valor_do_produto = float(input("Valor do Produto: "))
-forma_de_pagamento = str(input("""
-1 - Á VISTA                               
-2 - PARCELADO 
+forma_de_pagamento = int(input("""
+1 - A vista                              
+2 - Parcelado 
 Informe a forma de Pagamento: """))
 
-#Entrada
-match valor_do_produto:
-    case 1:
-         desconto = valor_do_produto * 0.10
-    case 2:
-        ...
-    case _:
-        print("Operação Inválida.")
-
 match forma_de_pagamento:
-    case"A vista":
-        total_a_pagar == desconto
-    case"Parcelado":
-        total_a_pagar == valor_do_produto / quantidade_de_parcelas
+    case 1:
+        #Aplicando o desconto.
+        desconto = valor_do_produto * 0.10
+        total_a_pagar = valor_do_produto - desconto
+        #Exibido resultados.
+        print(f"\nValor do produto: R${valor_do_produto}")
+        print(f"Forma de pagamento: à vista")
+        print(f"Valor do desconto: R${desconto}")
+        print(f"Total da pagar: R${total_a_pagar}")
+    case 2:      
+         quantidade_de_parcelas = int(input("Digite a quantidade de parcelas: "))
+         if quantidade_de_parcelas >= 1 and quantidade_de_parcelas <= 6:
+            valor_parcelas = valor_do_produto / quantidade_de_parcelas
          
-total_a_pagar == desconto    
+         #Exibindo resultados.
+         
+            print(f"\nValor do Produto: R${valor_do_produto}")
+            print(f"\nForma de pagamento: Parcelado")
+            print(f"\nQuantidade de Parcelas: {quantidade_de_parcelas}")
+            print(f"\nValor por Parcela: R${valor_parcelas:.2f}")
+            print(f"\nTotal á Prazo: R${valor_do_produto}")                    
+         else:
+            print("O parcelamento deve ser em até 6 parcelas.")           
+    case _:
+            print("Operação Inválida.")
 
-print(f"\nValor do Produto: {valor_do_produto}")
-print(f"\nForma de pagamento: {forma_de_pagamento}")
-print(f"\nDesconto: {desconto}")
-print(f"Total a pagar: {total_a_pagar}")
