@@ -9,14 +9,19 @@ codigo = int(input("Informe o seu código: "))
 match idade:
     case 65 :    
         
-        if tempo_trabalhado <= 30:
+        if tempo_trabalhado >= 30:
             print("Requerer aposentadoria.")
         else:
             print("Não requerer aposentadoria.")
             
     case _:
-            print("Não requerer aposentadoria.")
-        
+            if idade <65:
+                print("Não requerer aposentadoria.")
+            elif idade >=65:
+                print("Requerer aposentadoria.")
+            else:
+                print("Não requerer aposentadoria")
+            
 print(f"\nNome do empregado: {nome_do_empregado}")
 print(f"\nIdade: {idade}")
 print(f"\nTempo de Contribuição: {tempo_trabalhado}")
