@@ -1,19 +1,19 @@
 import os 
-os.system
+os.system("cls || clear")
 
 continua = 's'
 
 contador= 0
 
 while True:
-
+   
     #comandos a serem repetidos
     print("Repetindo...")
-
+    
     continua = input("Tecle 's' se deseja continuar: ").strip().lower()
-    contador = += 1
-
-    if continua != 's'
+    contador += 1
+    
+    if continua != 's':
         break
 
 
