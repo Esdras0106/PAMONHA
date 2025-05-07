@@ -41,7 +41,7 @@ print("*Dados salvos com sucesso*")
 nome_arquivo = "Funcionarios.txt"
 with open(nome_arquivo, "a", encoding="utf-8") as arquivo_usuario:
     for usuario in lista:
-        arquivo_usuario.write(f"\nNome do Usuário: {usuario.nome}\nData de nascimento do usuário: {usuario.data_nascimento}\nRG do usuario: {usuario.rg}\nCPF do usuário: {usuario.pf}")
+        arquivo_usuario.write(f"\nNome do Usuário: {usuario.nome}\nData de nascimento do usuário: {usuario.data_nascimento}\nRG do usuario: {usuario.rg}\nCPF do usuário: {usuario.cpf}")
 print(f"\t\nSalvando . .  .")
 
 try:
