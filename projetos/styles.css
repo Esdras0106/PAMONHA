@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(2, 78, 78);
+    font-size: medium;
+    padding: 0;
+}
+
+.tab1 table tbody tr {
+    padding: 20px;
+    border: 10px;
+    font-size: 15px;
+}
+
+img {
+    width: 400px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
