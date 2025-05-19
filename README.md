@@ -1,2 +1,0 @@
-# ATIVIDADES
-Início de Tudo
